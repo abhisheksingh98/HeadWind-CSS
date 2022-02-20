@@ -17,7 +17,6 @@
       src="https://kit.fontawesome.com/c1d4c8f89c.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Box icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
@@ -74,14 +73,75 @@
         <label id="inner-text">Dark</label>
       </div>
     </nav>
-    <div>
+    <div class="components-parent">
       <div>
         <h2 style="color: var(--secondary-color)">Components</h2>
+        <ul class="component-links">
+          <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
+        </ul>
       </div>
-      <ul class="component-links">
-        <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
-      </ul>
+      <section
+        class="main"
+        style="flex-direction: column; color: var(--secondary-color)"
+      >
+        <div id="alerts">
+          <div class="component-intro">
+            <h1 class="component-title">Alerts</h1>
+            <p>
+              Provide contextual feedback messages for typical user actions with
+              the handful of available and flexible alert messages.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Alerts are available for any length of text, as well as an optional
+            close button. For proper styling, use one of the eight required
+            contextual classes (e.g., .alert-success).<br />
+            Below are a few examples of Alerts with their html.
+          </p>
+          <div class="alert-examples">
+            <div class="alert-container alert-primary">
+              A simple primary alert—check it out!
+              <a class="link-text link-text-primary">Check it out!</a>
+            </div>
+            <div class="alert-container alert-secondary">
+              A simple secondary alert example!
+            </div>
+            <div class="alert-container alert-success">
+              <i class="fas fa-check-circle"></i>A simple success alert example!
+            </div>
+            <div class="alert-container alert-danger">
+              <i class="fas fa-exclamation-triangle"></i> A simple danger alert
+              example!
+            </div>
+            <div class="alert-container alert-warning">
+              <i class="fas fa-exclamation-triangle"></i>
+              A simple warning alert example!
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520secondary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520success%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520danger%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520warning%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520info%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E"
+                style="
+                  width: 538px;
+                  height: 504px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+
+        <hr />
+      </section>
     </div>
+
     <footer class="footer text-center">
       <div class="footer-header">
         Made with <span class="primary-text-color"> &#x2764;</span> by Abhishek
