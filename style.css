@@ -237,6 +237,10 @@ footer {
   align-items: flex-start;
 }
 
+.component-link-item {
+  margin: 10px 0;
+}
+
 .components-parent {
   display: flex;
   padding: 0 7rem 0 7rem;
@@ -244,7 +248,8 @@ footer {
 }
 
 #alerts,
-#avatar {
+#avatar,
+#badges {
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -306,6 +311,15 @@ footer {
   overflow: hidden;
 }
 
+.avatar-2xl,
+.avatar-xl,
+.avatar-lg,
+.avatar-md,
+.avatar-sm,
+.avatar-xs {
+  position: relative;
+}
+
 .avatar-2xl > img {
   height: 14rem;
   width: 14rem;
@@ -338,4 +352,47 @@ footer {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
+}
+
+.bg-secondary {
+  background: var(--main-color);
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+.bg-primary {
+  background: var(--main-color);
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid; */
+  align-items: baseline;
+  border-radius: 0.3rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+.status-badge {
+  right: 2.5em;
+  bottom: 0.7em;
+  height: 1.565rem;
+  min-width: 1.565rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.status-badge-online {
+  background-color: #1b7052;
+}
+
+.status-badge-offline {
+  background-color: #dc3545;
+  right: 2em;
+}
+.status-badge-away {
+  background-color: #ff9204;
+  right: 1.2em;
 }
