@@ -189,6 +189,7 @@ button {
   margin-top: 20px;
   display: inline-block;
   transition: background 1s, color 1s;
+  cursor: pointer;
 }
 
 button:hover {
