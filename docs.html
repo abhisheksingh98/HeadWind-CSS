@@ -78,6 +78,7 @@
         <h2 style="color: var(--secondary-color)">Components</h2>
         <ul class="component-links">
           <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
+          <li class="component-link-item"><a href="#Avatar">Avatar</a></li>
         </ul>
       </div>
       <section
@@ -137,7 +138,92 @@
             </code>
           </div>
         </div>
+        <hr />
+        <div id="avatar">
+          <div class="component-intro">
+            <h1 class="component-title">Avatar</h1>
+            <p>
+              The Avatar component is used to represent a user, and displays the
+              profile picture, initials or fallback icon.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            The Avatar component comes in 6 sizes. Starting from 2xl, xl, lg,
+            md, sm and xs. There are different shapes as well to give structures
+            like circle, square.
+          </p>
+          <div
+            class="avatar-examples"
+            style="flex-direction: row; align-items: center; gap: 1rem"
+          >
+            <div class="avatar avatar-2xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://cdn.motor1.com/images/mgl/WmLWo/s3/aston-martin-victor-static.webp"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-lg">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-md">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-sm">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-375"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-xs">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://carwow-uk-wp-3.imgix.net/Volvo-XC40-white-scaled.jpg"
+                alt="avatar"
+              />
+            </div>
+          </div>
 
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-2xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fdouble-extra-large.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fextra-large.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Flarge.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fmedium.png%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fsmall.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fextra-small.png%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 841px;
+                  height: 504px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
         <hr />
       </section>
     </div>

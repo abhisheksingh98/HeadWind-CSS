@@ -118,6 +118,7 @@ ul li a:hover {
   height: 90%;
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .left-column {
@@ -242,13 +243,15 @@ footer {
   gap: 2rem;
 }
 
-#alerts {
+#alerts,
+#avatar {
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
 
-.alert-examples {
+.alert-examples,
+.avatar-examples {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -301,4 +304,38 @@ footer {
   justify-content: center;
   background: #a9b4bd;
   overflow: hidden;
+}
+
+.avatar-2xl > img {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+}
+
+.avatar-xl > img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+}
+
+.avatar-lg > img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.avatar-md > img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+.avatar-sm > img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.avatar-xs > img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
 }
