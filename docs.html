@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./public/img/favicon.ico" type="image/x-icon" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
@@ -17,7 +19,6 @@
       src="https://kit.fontawesome.com/c1d4c8f89c.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Box icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
@@ -74,14 +75,711 @@
         <label id="inner-text">Dark</label>
       </div>
     </nav>
-    <div>
+    <div class="components-parent">
       <div>
         <h2 style="color: var(--secondary-color)">Components</h2>
+        <ul class="component-links">
+          <li class="component-link-item"><a href="#alerts">Alerts</a></li>
+          <li class="component-link-item"><a href="#avatar">Avatar</a></li>
+          <li class="component-link-item"><a href="#badges">Badges</a></li>
+          <li class="component-link-item"><a href="#buttons">Buttons</a></li>
+          <li class="component-link-item"><a href="#cards">Cards</a></li>
+          <li class="component-link-item"><a href="#images">Images</a></li>
+          <li class="component-link-item"><a href="#inputs">Inputs</a></li>
+          <li class="component-link-item">
+            <a href="#navigation">Navigation</a>
+          </li>
+          <li class="component-link-item"><a href="#modal">Modal</a></li>
+          <li class="component-link-item"><a href="#toasts">Toasts</a></li>
+        </ul>
       </div>
-      <ul class="component-links">
-        <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
-      </ul>
+      <section
+        class="main"
+        style="flex-direction: column; color: var(--secondary-color)"
+      >
+        <div id="alerts">
+          <div class="component-intro">
+            <h1 class="component-title">Alerts</h1>
+            <p>
+              Provide contextual feedback messages for typical user actions with
+              the handful of available and flexible alert messages.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Alerts are available for any length of text, as well as an optional
+            close button. For proper styling, use one of the eight required
+            contextual classes (e.g., .alert-success).<br />
+            Below are a few examples of Alerts with their html.
+          </p>
+          <div class="alert-examples">
+            <div class="alert-container alert-primary">
+              A simple primary alert—check it out!
+              <a class="link-text link-text-primary">Check it out!</a>
+            </div>
+            <div class="alert-container alert-secondary">
+              A simple secondary alert example!
+            </div>
+            <div class="alert-container alert-success">
+              <i class="fas fa-check-circle"></i>A simple success alert example!
+            </div>
+            <div class="alert-container alert-danger">
+              <i class="fas fa-exclamation-triangle"></i> A simple danger alert
+              example!
+            </div>
+            <div class="alert-container alert-warning">
+              <i class="fas fa-exclamation-triangle"></i>
+              A simple warning alert example!
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520secondary%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520success%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520danger%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520warning%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520A%2520simple%2520info%2520alert%25E2%2580%2594check%2520it%2520out%21%250A%253C%252Fdiv%253E"
+                style="
+                  width: 538px;
+                  height: 504px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="avatar">
+          <div class="component-intro">
+            <h1 class="component-title">Avatar</h1>
+            <p>
+              The Avatar component is used to represent a user, and displays the
+              profile picture, initials or fallback icon.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            The Avatar component comes in 6 sizes. Starting from 2xl, xl, lg,
+            md, sm and xs. There are different shapes as well to give structures
+            like circle, square.
+          </p>
+          <div
+            class="avatar-examples"
+            style="flex-direction: row; align-items: center; gap: 1rem"
+          >
+            <div class="avatar avatar-2xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://cdn.motor1.com/images/mgl/WmLWo/s3/aston-martin-victor-static.webp"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-lg">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-md">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-sm">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-375"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-xs">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://carwow-uk-wp-3.imgix.net/Volvo-XC40-white-scaled.jpg"
+                alt="avatar"
+              />
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-2xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fdouble-extra-large.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fextra-large.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Flarge.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fmedium.png%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fsmall.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fextra-small.png%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 841px;
+                  height: 537px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="badges">
+          <div class="component-intro">
+            <h1 class="component-title">Badges</h1>
+            <p>
+              Documentation and examples for badges, our small count and
+              labeling component.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Badges scale to match the size of the immediate parent element by
+            using relative font sizing and em units. Examples of badges
+            containing text, using primary and secondary colors. The badge is
+            applied to its children.
+          </p>
+          <div
+            class="avatar-examples"
+            style="flex-direction: row; align-items: center; gap: 1rem"
+          >
+            <div class="badge-container">
+              <h2 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-secondary">New</p>
+              </h2>
+              <h3 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-secondary">New</p>
+              </h3>
+              <h4 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-secondary">New</p>
+              </h4>
+              <h5 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-primary">New</p>
+              </h5>
+              <h6 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-primary">New</p>
+              </h6>
+            </div>
+          </div>
+          <div
+            class="avatar-examples"
+            style="flex-direction: row; align-items: center; gap: 1rem"
+          >
+            <div class="avatar avatar-2xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*"
+                alt="avatar"
+              />
+              <span class="status-badge status-badge-online"></span>
+            </div>
+            <div class="avatar avatar-xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://cdn.motor1.com/images/mgl/WmLWo/s3/aston-martin-victor-static.webp"
+                alt="avatar"
+              />
+              <span class="status-badge status-badge-offline"></span>
+            </div>
+            <div class="avatar avatar-lg">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                alt="avatar"
+              />
+              <span class="status-badge status-badge-away"></span>
+            </div>
+            <div class="avatar avatar-md">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg"
+                alt="avatar"
+              />
+              <span
+                style="right: 0.4rem"
+                class="status-badge status-badge-online"
+              ></span>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh1%253E%250A%253Ch2%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh2%253E%250A%253Ch3%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh3%253E%250A%253Ch4%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh4%253E%250A%253Ch5%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh5%253E%250A%253Ch6%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh6%253E"
+                style="
+                  width: 706px;
+                  height: 404px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="buttons">
+          <div class="component-intro">
+            <h1 class="component-title">Buttons</h1>
+            <p>
+              Use headwind's custom button styles for actions in forms, dialogs,
+              and more with support for multiple sizes, states, and more.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Headwind includes several predefined button styles, each serving its
+            own semantic purpose, with a few extras thrown in for more control.
+          </p>
+          <div style="flex-direction: row; gap: 1rem" class="button-examples">
+            <div class="alert-container alert-primary">Primary</div>
+            <div class="alert-container alert-secondary">Secondary</div>
+            <div class="alert-container alert-success">Success</div>
+            <div class="alert-container alert-danger">Danger</div>
+            <div class="alert-container alert-warning">Warning</div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-link%2522%253ELink%253C%252Fbutton%253E"
+                style="
+                  width: 690px;
+                  height: 355px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="cards">
+          <div class="component-intro">
+            <h1 class="component-title">Cards</h1>
+            <p>
+              Headwind's cards provide a flexible and extensible content
+              container with multiple variants and options.<br /><br />
+              A card is a flexible and extensible content container. It includes
+              options for headers and footers, a wide variety of content,
+              contextual background colors, and powerful display options. If
+              you’re familiar with Bootstrap 3, cards replace our old panels,
+              wells, and thumbnails. Similar functionality to those components
+              is available as modifier classes for cards
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Cards are built with as little markup and styles as possible, but
+            still manage to deliver a ton of control and customization. Built
+            with flexbox, they offer easy alignment and mix well with other
+            Bootstrap components. They have no margin by default, so use spacing
+            utilities as needed. Below is an example of a basic card with mixed
+            content and a fixed width. Cards have no fixed width to start, so
+            they’ll naturally fill the full width of its parent element. This is
+            easily customized with our various sizing options.
+          </p>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <div
+              style="border: 1px solid gray; border-radius: 10px; width: 30%"
+            >
+              <div class="card-box">
+                <img
+                  style="width: 100.3%; border-radius: 5px"
+                  loading="lazy"
+                  class="img-circle"
+                  src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*"
+                  alt="avatar"
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  padding: 0.5rem;
+                  align-items: flex-start;
+                "
+              >
+                <h1>Card title</h1>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button>Go Somewhere</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%2520style%253D%2522width%253A%252018rem%253B%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522card-img-top%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh5%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESome%2520quick%2520example%2520text%2520to%2520build%2520on%2520the%2520card%2520title%2520and%2520make%2520up%2520the%2520bulk%2520of%2520the%2520%2509card%27s%2520content.%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2522%253EGo%2520somewhere%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 1024px;
+                  height: 337px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="images">
+          <div class="component-intro">
+            <h1 class="component-title">Images</h1>
+            <p>
+              Documentation and examples for opting images into responsive
+              behavior (so they never become wider than their parent) and add
+              lightweight styles to them—all via classes.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <h3>Responsive Images</h3>
+          <p>
+            Images in Headwind are made responsive with .img-responsive. This
+            applies max-width: 100%; and height: auto; to the image so that it
+            scales with the parent width.
+          </p>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <img
+              style="height: 400px"
+              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2015%252F04%252F23%252F22%252F00%252Ftree-736885__480.jpg%2522%2520class%253D%2522img-responsive%2522%2520alt%253D%2522responsive-image%2522%253E"
+                style="
+                  width: 1024px;
+                  height: 206px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+          <h3>Circle Images</h3>
+          <p>Images in Headwind are made responsive with .img-circle.</p>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <img
+              style="height: 200px; width: 200px; border-radius: 50%"
+              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2015%252F04%252F23%252F22%252F00%252Ftree-736885__480.jpg%2522%2520class%253D%2522img-circle%2522%2520alt%253D%2522round-image%2522%253E"
+                style="
+                  width: 1024px;
+                  height: 206px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="inputs">
+          <div class="component-intro">
+            <h1 class="component-title">Inputs</h1>
+            <p>
+              The Input element specifies an input field where the user can
+              enter data. It is the most important form element. It can be
+              displayed in several ways, depending on the type attribute.
+            </p>
+          </div>
+
+          <h2 class="component-example">Examples</h2>
+          <h3>Input Textbox</h3>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <input type="text" placeholder="Enter email" name="email" />
+          </div>
+          <h3>Input with validation and errors style</h3>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <input
+              placeholder="Enter email"
+              type="text"
+              name="email"
+              class="validate"
+              required
+            />
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520placeholder%253D%2522Enter%2520email%2522%2520type%253D%2522text%2522%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522validate%2522%2520%250A%2520%252F%253E%250A%253Cinput%2520placeholder%253D%2522Enter%2520email%2522%2520type%253D%2522text%2522%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522validate%2522%2520required%250A%2520%252F%253E%250A"
+                style="
+                  width: 613px;
+                  height: 350px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="navigation">
+          <div class="component-intro">
+            <h1 class="component-title">Navigation</h1>
+            <p>
+              This tag defines a set of navigation links. Notice that NOT all
+              links of a document should be inside a nav element. The < nav
+              element is intended only for major block of navigation links.
+            </p>
+          </div>
+
+          <h2 class="component-example">Examples</h2>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <nav>
+              <div class="logo" onclick="location.href = '/'">
+                <img src="./public/img/wind.png" alt="" id="logo-img" />
+                <a id="logo-text">headwindcss</a>
+              </div>
+
+              <ul>
+                <li class="list-inline-item">
+                  <a href="./docs.html" class="nav-icon-link link-no-style">
+                    <span style="font-size: 1.5rem" class="nav-icon">
+                      Docs
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/abhisheksingh98"
+                    class="nav-icon-link link-no-style"
+                  >
+                    <span class="nav-icon">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/abhishekk_07"
+                    class="nav-icon-link link-no-style"
+                  >
+                    <span class="nav-icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/in/abhisheksingh98"
+                    class="nav-icon-link link-no-style"
+                  >
+                    <span class="nav-icon">
+                      <i class="fab fa-linkedin-in"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cnav%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522logo%2522%2520onclick%253D%2522location.href%2520%253D%2520%27%252F%27%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fpublic%252Fimg%252Fwind.png%2522%2520alt%253D%2522%2522%2520id%253D%2522logo-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520id%253D%2522logo-text%2522%253Eheadwindcss%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522.%252Fdocs.html%2522%2520class%253D%2522nav-icon-link%2520link-no-style%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520style%253D%2522font-size%253A%25201.5rem%2522%2520class%253D%2522nav-icon%2522%253E%2520Docs%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522https%253A%252F%252Fgithub.com%252Fabhisheksingh98%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522nav-icon-link%2520link-no-style%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-github%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522https%253A%252F%252Ftwitter.com%252Fabhishekk_07%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522nav-icon-link%2520link-no-style%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-twitter%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522https%253A%252F%252Fwww.linkedin.com%252Fin%252Fabhisheksingh98%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522nav-icon-link%2520link-no-style%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-linkedin-in%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522Mode%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522switch%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520id%253D%2522inner-text%2522%253EDark%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E"
+                style="
+                  width: 757px;
+                  height: 1081px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="modal">
+          <div class="component-intro">
+            <h1 class="component-title">Modal</h1>
+            <p>
+              Modals are built with HTML, CSS, and JavaScript. They’re
+              positioned over everything else in the document and remove scroll
+              from the body so that modal content scrolls instead.
+            </p>
+          </div>
+
+          <h2 class="component-example">Examples</h2>
+          Click on the below CTA to open modal.
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <button style="width: 15%" id="myBtn">Click Me</button>
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Modal body containing some text</p>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522myBtn%2522%253EClick%2520Me%253C%252Fbutton%253E%250A%2520%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%253Cp%253EModal%2520body%2520containing%2520some%2520text%253C%252Fp%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2015%252F04%252F23%252F22%252F00%252Ftree-736885__480.jpg%2522%250A%2520%2520%2520alt%253D%2522%2522%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  width: 815px;
+                  height: 350px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+          JavaScript
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cscript%253E%250A%2520%2520%2520%2520%2520%2520var%2520modal%2520%253D%2520document.getElementById%28%2522myModal%2522%29%253B%250A%2520%2520%2520%2520%2520%2520var%2520btn%2520%253D%2520document.getElementById%28%2522myBtn%2522%29%253B%250A%2520%2520%2520%2520%2520%2520var%2520span%2520%253D%2520document.getElementsByClassName%28%2522close%2522%29%255B0%255D%253B%250A%2520%2520%2520%2520%2520%2520btn.onclick%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522block%2522%253B%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520span.onclick%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520window.onclick%2520%253D%2520function%2520%28event%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28event.target%2520%253D%253D%2520modal%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%253C%252Fscript%253E"
+                style="
+                  width: 648px;
+                  height: 467px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="toasts">
+          <div class="component-intro">
+            <h1 class="component-title">Toasts</h1>
+            <p>
+              Push notifications to your visitors with a toast, a lightweight
+              and easily customizable alert message.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Headwind includes several predefined button styles, each serving its
+            own semantic purpose, with a few extras thrown in for more control.
+          </p>
+          <div style="flex-direction: row; gap: 1rem" class="button-examples">
+            <div class="toast-container alert-primary">
+              Added to Cart
+              <div>X</div>
+            </div>
+            <div class="toast-container alert-success">
+              Saved
+              <div>X</div>
+            </div>
+            <div class="toast-container alert-danger">
+              Try Again!
+              <div>X</div>
+            </div>
+          </div>
+          <button style="width: 15%" onclick="showToast()">Show Toast</button>
+          <div id="toast">
+            Saved
+            <div>X</div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cbutton%2520style%253D%2522width%253A%252015%2525%2522%2520onclick%253D%2522showToast%28%29%2522%253EShow%2520Toast%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522toast%2522%253E%250A%2520%2520%2520%2520Saved%250A%2520%2520%253Cdiv%253EX%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2509function%2520showToast%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520var%2520x%2520%253D%2520document.getElementById%28%2522toast%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520x.className%2520%253D%2520%2522show%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520setTimeout%28function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520x.className%2520%253D%2520x.className.replace%28%2522show%2522%252C%2520%2522%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%2520%2520%2520%2520%2520%2520%257D"
+                style="
+                  width: 723px;
+                  height: 430px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+      </section>
     </div>
+
     <footer class="footer text-center">
       <div class="footer-header">
         Made with <span class="primary-text-color"> &#x2764;</span> by Abhishek
@@ -120,6 +818,31 @@
           Inner_text.innerHTML = "Dark";
         }
       };
+    </script>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      function showToast() {
+        var x = document.getElementById("toast");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
     </script>
   </body>
 </html>
