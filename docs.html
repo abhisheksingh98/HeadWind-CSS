@@ -82,6 +82,7 @@
           <li class="component-link-item"><a href="#Avatar">Badges</a></li>
           <li class="component-link-item"><a href="#Avatar">Buttons</a></li>
           <li class="component-link-item"><a href="#Avatar">Cards</a></li>
+          <li class="component-link-item"><a href="#Avatar">Images</a></li>
         </ul>
       </div>
       <section
@@ -438,6 +439,80 @@
                 style="
                   width: 1024px;
                   height: 337px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="images">
+          <div class="component-intro">
+            <h1 class="component-title">Images</h1>
+            <p>
+              Documentation and examples for opting images into responsive
+              behavior (so they never become wider than their parent) and add
+              lightweight styles to them—all via classes.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <h3>Responsive Images</h3>
+          <p>
+            Images in Headwind are made responsive with .img-responsive. This
+            applies max-width: 100%; and height: auto; to the image so that it
+            scales with the parent width.
+          </p>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <img
+              style="height: 400px"
+              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2015%252F04%252F23%252F22%252F00%252Ftree-736885__480.jpg%2522%2520class%253D%2522img-responsive%2522%2520alt%253D%2522responsive-image%2522%253E"
+                style="
+                  width: 1024px;
+                  height: 206px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+          <h3>Circle Images</h3>
+          <p>Images in Headwind are made responsive with .img-circle.</p>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <img
+              style="height: 200px; width: 200px; border-radius: 50%"
+              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2015%252F04%252F23%252F22%252F00%252Ftree-736885__480.jpg%2522%2520class%253D%2522img-circle%2522%2520alt%253D%2522round-image%2522%253E"
+                style="
+                  width: 1024px;
+                  height: 206px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
