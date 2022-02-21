@@ -87,6 +87,7 @@
           <li class="component-link-item">
             <a href="#Navigation">Navigation</a>
           </li>
+          <li class="component-link-item"><a href="#Modal">Modal</a></li>
         </ul>
       </div>
       <section
@@ -663,6 +664,71 @@
           </div>
         </div>
         <hr />
+        <div id="modal">
+          <div class="component-intro">
+            <h1 class="component-title">Modal</h1>
+            <p>
+              Modals are built with HTML, CSS, and JavaScript. They’re
+              positioned over everything else in the document and remove scroll
+              from the body so that modal content scrolls instead.
+            </p>
+          </div>
+
+          <h2 class="component-example">Examples</h2>
+          Click on the below CTA to open modal.
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <button style="width: 15%" id="myBtn">Click Me</button>
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Modal body containing some text</p>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522myBtn%2522%253EClick%2520Me%253C%252Fbutton%253E%250A%2520%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%253Cp%253EModal%2520body%2520containing%2520some%2520text%253C%252Fp%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2015%252F04%252F23%252F22%252F00%252Ftree-736885__480.jpg%2522%250A%2520%2520%2520alt%253D%2522%2522%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  width: 815px;
+                  height: 350px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+          JavaScript
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cscript%253E%250A%2520%2520%2520%2520%2520%2520var%2520modal%2520%253D%2520document.getElementById%28%2522myModal%2522%29%253B%250A%2520%2520%2520%2520%2520%2520var%2520btn%2520%253D%2520document.getElementById%28%2522myBtn%2522%29%253B%250A%2520%2520%2520%2520%2520%2520var%2520span%2520%253D%2520document.getElementsByClassName%28%2522close%2522%29%255B0%255D%253B%250A%2520%2520%2520%2520%2520%2520btn.onclick%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522block%2522%253B%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520span.onclick%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%2520%2520window.onclick%2520%253D%2520function%2520%28event%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28event.target%2520%253D%253D%2520modal%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%253C%252Fscript%253E"
+                style="
+                  width: 648px;
+                  height: 467px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
       </section>
     </div>
 
@@ -702,6 +768,22 @@
           Inner_text.innerHTML = "Light";
         } else {
           Inner_text.innerHTML = "Dark";
+        }
+      };
+    </script>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
       };
     </script>
