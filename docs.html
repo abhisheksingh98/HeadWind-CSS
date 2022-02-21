@@ -83,6 +83,7 @@
           <li class="component-link-item"><a href="#Avatar">Buttons</a></li>
           <li class="component-link-item"><a href="#Avatar">Cards</a></li>
           <li class="component-link-item"><a href="#Avatar">Images</a></li>
+          <li class="component-link-item"><a href="#Avatar">Inputs</a></li>
         </ul>
       </div>
       <section
@@ -513,6 +514,55 @@
                 style="
                   width: 1024px;
                   height: 206px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="inputs">
+          <div class="component-intro">
+            <h1 class="component-title">Inputs</h1>
+            <p>
+              The Input element specifies an input field where the user can
+              enter data. It is the most important form element. It can be
+              displayed in several ways, depending on the type attribute.
+            </p>
+          </div>
+
+          <h2 class="component-example">Examples</h2>
+          <h3>Input Textbox</h3>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <input type="text" placeholder="Enter email" name="email" />
+          </div>
+          <h3>Input with validation and errors style</h3>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <input
+              placeholder="Enter email"
+              type="text"
+              name="email"
+              class="validate"
+              required
+            />
+          </div>
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520placeholder%253D%2522Enter%2520email%2522%2520type%253D%2522text%2522%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522validate%2522%2520%250A%2520%252F%253E%250A%253Cinput%2520placeholder%253D%2522Enter%2520email%2522%2520type%253D%2522text%2522%2520name%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522validate%2522%2520required%250A%2520%252F%253E%250A"
+                style="
+                  width: 613px;
+                  height: 350px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
