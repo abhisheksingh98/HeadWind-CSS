@@ -255,7 +255,8 @@ footer {
 #images,
 #inputs,
 #navigation,
-#modal {
+#modal,
+#toasts {
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -274,6 +275,14 @@ footer {
 .alert-container {
   border-radius: 0.3rem;
   padding: 1rem 3rem 1rem 1rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.toast-container {
+  border-radius: 0.3rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 0;
   display: flex;
   align-items: center;
@@ -450,4 +459,72 @@ input {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 150px;
+  margin-left: -125px;
+  background-color: #d1e7dd;
+  color: #0f5132;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }

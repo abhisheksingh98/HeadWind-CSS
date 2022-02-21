@@ -77,17 +77,18 @@
       <div>
         <h2 style="color: var(--secondary-color)">Components</h2>
         <ul class="component-links">
-          <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
-          <li class="component-link-item"><a href="#Avatar">Avatar</a></li>
-          <li class="component-link-item"><a href="#Badges">Badges</a></li>
-          <li class="component-link-item"><a href="#Buttons">Buttons</a></li>
-          <li class="component-link-item"><a href="#Cards">Cards</a></li>
-          <li class="component-link-item"><a href="#Images">Images</a></li>
-          <li class="component-link-item"><a href="#Inputs">Inputs</a></li>
+          <li class="component-link-item"><a href="#alerts">Alerts</a></li>
+          <li class="component-link-item"><a href="#avatar">Avatar</a></li>
+          <li class="component-link-item"><a href="#badges">Badges</a></li>
+          <li class="component-link-item"><a href="#buttons">Buttons</a></li>
+          <li class="component-link-item"><a href="#cards">Cards</a></li>
+          <li class="component-link-item"><a href="#images">Images</a></li>
+          <li class="component-link-item"><a href="#inputs">Inputs</a></li>
           <li class="component-link-item">
-            <a href="#Navigation">Navigation</a>
+            <a href="#navigation">Navigation</a>
           </li>
-          <li class="component-link-item"><a href="#Modal">Modal</a></li>
+          <li class="component-link-item"><a href="#modal">Modal</a></li>
+          <li class="component-link-item"><a href="#toasts">Toasts</a></li>
         </ul>
       </div>
       <section
@@ -729,6 +730,56 @@
           </div>
         </div>
         <hr />
+        <div id="toasts">
+          <div class="component-intro">
+            <h1 class="component-title">Toasts</h1>
+            <p>
+              Push notifications to your visitors with a toast, a lightweight
+              and easily customizable alert message.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Headwind includes several predefined button styles, each serving its
+            own semantic purpose, with a few extras thrown in for more control.
+          </p>
+          <div style="flex-direction: row; gap: 1rem" class="button-examples">
+            <div class="toast-container alert-primary">
+              Added to Cart
+              <div>X</div>
+            </div>
+            <div class="toast-container alert-success">
+              Saved
+              <div>X</div>
+            </div>
+            <div class="toast-container alert-danger">
+              Try Again!
+              <div>X</div>
+            </div>
+          </div>
+          <button style="width: 15%" onclick="showToast()">Show Toast</button>
+          <div id="toast">
+            Saved
+            <div>X</div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cbutton%2520style%253D%2522width%253A%252015%2525%2522%2520onclick%253D%2522showToast%28%29%2522%253EShow%2520Toast%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522toast%2522%253E%250A%2520%2520%2520%2520Saved%250A%2520%2520%253Cdiv%253EX%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2509function%2520showToast%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520var%2520x%2520%253D%2520document.getElementById%28%2522toast%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520x.className%2520%253D%2520%2522show%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520setTimeout%28function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520x.className%2520%253D%2520x.className.replace%28%2522show%2522%252C%2520%2522%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%2520%2520%2520%2520%2520%2520%257D"
+                style="
+                  width: 723px;
+                  height: 430px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -786,6 +837,15 @@
           modal.style.display = "none";
         }
       };
+    </script>
+    <script>
+      function showToast() {
+        var x = document.getElementById("toast");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
     </script>
   </body>
 </html>
