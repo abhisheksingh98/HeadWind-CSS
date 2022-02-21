@@ -253,7 +253,8 @@ footer {
 #buttons,
 #cards,
 #images,
-#inputs {
+#inputs,
+#navigation {
   display: flex;
   gap: 1rem;
   flex-direction: column;
