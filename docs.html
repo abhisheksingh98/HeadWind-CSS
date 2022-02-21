@@ -81,6 +81,7 @@
           <li class="component-link-item"><a href="#Avatar">Avatar</a></li>
           <li class="component-link-item"><a href="#Avatar">Badges</a></li>
           <li class="component-link-item"><a href="#Avatar">Buttons</a></li>
+          <li class="component-link-item"><a href="#Avatar">Cards</a></li>
         </ul>
       </div>
       <section
@@ -332,7 +333,7 @@
           </div>
         </div>
         <hr />
-        <div id="alerts">
+        <div id="buttons">
           <div class="component-intro">
             <h1 class="component-title">Buttons</h1>
             <p>
@@ -360,6 +361,83 @@
                 style="
                   width: 690px;
                   height: 355px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="cards">
+          <div class="component-intro">
+            <h1 class="component-title">Cards</h1>
+            <p>
+              Headwind's cards provide a flexible and extensible content
+              container with multiple variants and options.<br /><br />
+              A card is a flexible and extensible content container. It includes
+              options for headers and footers, a wide variety of content,
+              contextual background colors, and powerful display options. If
+              you’re familiar with Bootstrap 3, cards replace our old panels,
+              wells, and thumbnails. Similar functionality to those components
+              is available as modifier classes for cards
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Cards are built with as little markup and styles as possible, but
+            still manage to deliver a ton of control and customization. Built
+            with flexbox, they offer easy alignment and mix well with other
+            Bootstrap components. They have no margin by default, so use spacing
+            utilities as needed. Below is an example of a basic card with mixed
+            content and a fixed width. Cards have no fixed width to start, so
+            they’ll naturally fill the full width of its parent element. This is
+            easily customized with our various sizing options.
+          </p>
+          <div
+            style="flex-direction: column; border: 1px solid gray"
+            class="button-examples"
+          >
+            <div
+              style="border: 1px solid gray; border-radius: 10px; width: 30%"
+            >
+              <div class="card-box">
+                <img
+                  style="width: 100.3%; border-radius: 5px"
+                  loading="lazy"
+                  class="img-circle"
+                  src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*"
+                  alt="avatar"
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  padding: 0.5rem;
+                  align-items: flex-start;
+                "
+              >
+                <h1>Card title</h1>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button>Go Somewhere</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%2520style%253D%2522width%253A%252018rem%253B%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522card-img-top%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh5%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253ESome%2520quick%2520example%2520text%2520to%2520build%2520on%2520the%2520card%2520title%2520and%2520make%2520up%2520the%2520bulk%2520of%2520the%2520%2509card%27s%2520content.%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2522%253EGo%2520somewhere%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="
+                  width: 1024px;
+                  height: 337px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
