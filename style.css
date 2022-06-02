@@ -252,7 +252,8 @@ footer {
 #badges,
 #buttons,
 #cards,
-#images {
+#images,
+#inputs {
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -399,4 +400,14 @@ footer {
 .status-badge-away {
   background-color: #ff9204;
   right: 1.2em;
+}
+
+input {
+  width: 30%;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid lightgray;
+}
+.validate {
+  border: 1px solid rgb(243, 86, 86);
 }
