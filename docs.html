@@ -80,6 +80,7 @@
           <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
           <li class="component-link-item"><a href="#Avatar">Avatar</a></li>
           <li class="component-link-item"><a href="#Avatar">Badges</a></li>
+          <li class="component-link-item"><a href="#Avatar">Buttons</a></li>
         </ul>
       </div>
       <section
@@ -320,6 +321,45 @@
                 style="
                   width: 706px;
                   height: 404px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="alerts">
+          <div class="component-intro">
+            <h1 class="component-title">Buttons</h1>
+            <p>
+              Use headwind's custom button styles for actions in forms, dialogs,
+              and more with support for multiple sizes, states, and more.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Headwind includes several predefined button styles, each serving its
+            own semantic purpose, with a few extras thrown in for more control.
+          </p>
+          <div style="flex-direction: row; gap: 1rem" class="button-examples">
+            <div class="alert-container alert-primary">Primary</div>
+            <div class="alert-container alert-secondary">Secondary</div>
+            <div class="alert-container alert-success">Success</div>
+            <div class="alert-container alert-danger">Danger</div>
+            <div class="alert-container alert-warning">Warning</div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-link%2522%253ELink%253C%252Fbutton%253E"
+                style="
+                  width: 690px;
+                  height: 355px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
