@@ -79,6 +79,7 @@
         <ul class="component-links">
           <li class="component-link-item"><a href="#Alerts">Alerts</a></li>
           <li class="component-link-item"><a href="#Avatar">Avatar</a></li>
+          <li class="component-link-item"><a href="#Avatar">Badges</a></li>
         </ul>
       </div>
       <section
@@ -213,7 +214,112 @@
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-2xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fdouble-extra-large.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fextra-large.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Flarge.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fmedium.png%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fsmall.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-circle%2522%2520src%253D%2522public%252Fimages%252Fextra-small.png%2522%2520alt%253D%2522avatar%2522%253E%250A%253C%252Fdiv%253E"
                 style="
                   width: 841px;
-                  height: 504px;
+                  height: 537px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+        <hr />
+        <div id="badges">
+          <div class="component-intro">
+            <h1 class="component-title">Badges</h1>
+            <p>
+              Documentation and examples for badges, our small count and
+              labeling component.
+            </p>
+          </div>
+          <h2 class="component-example">Examples</h2>
+          <p>
+            Badges scale to match the size of the immediate parent element by
+            using relative font sizing and em units. Examples of badges
+            containing text, using primary and secondary colors. The badge is
+            applied to its children.
+          </p>
+          <div
+            class="avatar-examples"
+            style="flex-direction: row; align-items: center; gap: 1rem"
+          >
+            <div class="badge-container">
+              <h2 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-secondary">New</p>
+              </h2>
+              <h3 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-secondary">New</p>
+              </h3>
+              <h4 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-secondary">New</p>
+              </h4>
+              <h5 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-primary">New</p>
+              </h5>
+              <h6 class="badge-container">
+                Example of Heading with Badge
+                <p class="badge bg-primary">New</p>
+              </h6>
+            </div>
+          </div>
+          <div
+            class="avatar-examples"
+            style="flex-direction: row; align-items: center; gap: 1rem"
+          >
+            <div class="avatar avatar-2xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg?crop=0.737xw:0.738xh;0.181xw,0.218xh&resize=640:*"
+                alt="avatar"
+              />
+              <span class="status-badge status-badge-online"></span>
+            </div>
+            <div class="avatar avatar-xl">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://cdn.motor1.com/images/mgl/WmLWo/s3/aston-martin-victor-static.webp"
+                alt="avatar"
+              />
+              <span class="status-badge status-badge-offline"></span>
+            </div>
+            <div class="avatar avatar-lg">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                alt="avatar"
+              />
+              <span class="status-badge status-badge-away"></span>
+            </div>
+            <div class="avatar avatar-md">
+              <img
+                loading="lazy"
+                class="img-circle"
+                src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg"
+                alt="avatar"
+              />
+              <span
+                style="right: 0.4rem"
+                class="status-badge status-badge-online"
+              ></span>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh1%253E%250A%253Ch2%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh2%253E%250A%253Ch3%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh3%253E%250A%253Ch4%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh4%253E%250A%253Ch5%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh5%253E%250A%253Ch6%253EExample%2520heading%2520%253Cspan%2520class%253D%2522badge%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh6%253E"
+                style="
+                  width: 706px;
+                  height: 404px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
