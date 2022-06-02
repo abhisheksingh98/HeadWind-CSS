@@ -249,7 +249,9 @@ footer {
 
 #alerts,
 #avatar,
-#badges {
+#badges,
+#buttons,
+#cards {
   display: flex;
   gap: 1rem;
   flex-direction: column;
