@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c1d4c8f89c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Box icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>HeadWind CSS</title>
-</head>
-<body>
-   <div>This is a UI Component Library</div> 
-</body>
+  </head>
+  <body>
+    <nav>
+      <div class="logo" onclick="location.href = '/'">
+        <img src="./public/img/wind.png" alt="" id="logo-img" />
+        <a id="logo-text">headwindcss</a>
+      </div>
+
+      <ul>
+        <li class="list-inline-item">
+          <a href="./docs.html" class="nav-icon-link link-no-style">
+            <span style="font-size: 1.5rem" class="nav-icon"> Docs </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://github.com/abhisheksingh98"
+            class="nav-icon-link link-no-style"
+          >
+            <span class="nav-icon">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://twitter.com/abhishekk_07"
+            class="nav-icon-link link-no-style"
+          >
+            <span class="nav-icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.linkedin.com/in/abhisheksingh98"
+            class="nav-icon-link link-no-style"
+          >
+            <span class="nav-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <div id="Mode">
+        <div id="switch"></div>
+        <label id="inner-text">Dark</label>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="left-column">
+        <div class="img-box">
+          <img src="img/Pattern.png" alt="" class="img-back" />
+          <img src="./public/img/landing-screen.svg" alt="" class="img-main" />
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="content">
+          <h1>Rapidly build modern websites</h1>
+          <p>
+            A utility-first CSS framework packed with classes. <br />Quickly
+            design and customize responsive mobile-first sites
+          </p>
+
+          <button onclick="location.href = './docs.html'">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-center">
+      <div class="footer-header">
+        Made with <span class="primary-text-color"> &#x2764;</span> by Abhishek
+        Singh © 2022
+      </div>
+      <ul class="inline-list list-style-none footer-social-icons">
+        <li class="list-inline-item">
+          <a class="link-no-style" href="https://github.com/abhisheksingh98"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="link-no-style" href="https://twitter.com/abhishekk_07"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            class="link-no-style"
+            href="https://www.linkedin.com/in/abhisheksingh98"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const Switch_Mode = document.getElementById("switch");
+      const Inner_text = document.getElementById("inner-text");
+      Mode.onclick = function () {
+        document.body.classList.toggle("dark-mode");
+        Switch_Mode.classList.toggle("switch-active");
+        Inner_text.classList.toggle("Inner-text-active");
+        if (document.body.classList.contains("dark-mode")) {
+          Inner_text.innerHTML = "Light";
+        } else {
+          Inner_text.innerHTML = "Dark";
+        }
+      };
+    </script>
+  </body>
 </html>
